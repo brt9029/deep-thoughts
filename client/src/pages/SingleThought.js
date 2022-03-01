@@ -39,7 +39,7 @@ const SingleThought = (props) => {
         <ReactionList reactions={thought.reactions} />
       )}
 
-      {Auth.loggedIn() && <ReactionForm thoughtId={thoughtId._id} />}
+      {Auth.loggedIn() && <ReactionForm thoughtId={thought._id} />}
     </div>
   );
 };
