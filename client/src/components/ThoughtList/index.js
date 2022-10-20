@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdOutlineEmojiFoodBeverage } from 'react-icons/md';
 
 const ThoughtList = ({ thoughts, title }) => {
     if (!thoughts.length) {
@@ -14,7 +15,7 @@ const ThoughtList = ({ thoughts, title }) => {
                 <div key={thought._id} className='card mb-3'>
                     <p className='card-header'>
                         <Link to={`/profile/${thought.username}`} style={{ fontWeight: 700 }} className='text-light'>
-                            {thought.username}
+                        <MdOutlineEmojiFoodBeverage className='text-yellow' /> {thought.username}
                         </Link>{' '}
                         thought on {thought.createdAt}
                     </p>

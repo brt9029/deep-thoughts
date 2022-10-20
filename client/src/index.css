@@ -144,11 +144,56 @@ nav a:hover {
   background-color: var(--blue-green);
 }
 
+.btn-submit {
+  font-family: 'Kalam', cursive;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--dark-background);
+  outline: none;
+  background-color: var(--berry);
+  transition: all 0.5s;
+  max-width: 50%;
+}
+
+.btn-submit:hover {
+  color: var(--solid-pink);
+  background-color: var(--blue-green);
+}
+
 .btn-inline {
   display: inline;
 }
 
 /* CARDS */
+.login-card {
+  margin: 0 0 20px 0;
+  border: 3px solid var(--dark-background);
+  border-radius: var(--border-radius);
+  background: var(--dark-background);
+  color: var(--berry);
+  opacity: 0.95;
+}
+
+.login-header {
+  font-family: 'Kalam', cursive;
+  color: var(--blue-green);
+  margin: 0;
+  background-color: var(--dark-background);
+  padding: 0.625rem;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.login-body {
+  background-color: var(--dark-background);
+  color: var(--berry);
+  padding: 2.5%;
+  font-size: 1.4rem;
+}
+
 .card {
   margin: 0 0 20px 0;
   border: 3px solid var(--dark-background);
@@ -197,14 +242,17 @@ nav a:hover {
   padding: 0.75rem;
   margin: 0.2rem 0;
   font-size: 1.2rem;
-  border: 2px solid var(--liberty);
+  border: 2px solid var(--berry);
   border-radius: var(--border-radius);
   text-shadow: 1px 1px 1px black;
+  background-color: var(--dark-background);
+  color: var(--light);
 }
 
 .form-input:focus {
   outline: none !important;
   border-color: var(--solid-pink);
+  color: var(--light);
 }
 
 ::placeholder {
@@ -815,6 +863,10 @@ nav a:hover {
 
 .text-error {
   color: var(--error);
+}
+
+.text-yellow {
+  color: var(--primary);
 }
 
 /* BACKGROUND UTILS */

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import { MdOutlineEmojiFoodBeverage } from 'react-icons/md';
 
 import Auth from '../utils/auth';
 import { QUERY_THOUGHT } from '../utils/queries';
@@ -24,7 +25,7 @@ const SingleThought = props => {
       <div className="card mb-3">
         <p className="card-header">
           <span style={{ fontWeight: 700 }} className="text-light">
-            {thought.username}
+            <MdOutlineEmojiFoodBeverage /> {thought.username}
           </span>{' '}
           thought on {thought.createdAt}
         </p>
