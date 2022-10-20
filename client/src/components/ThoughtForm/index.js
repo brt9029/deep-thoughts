@@ -64,7 +64,7 @@ const ThoughtForm = () => {
                 {error && <span className='ml-2 text-error'>Something went wrong...</span>}
             </p>
             <form onSubmit={handleFormSubmit}>
-                <textarea className='form-input col-12 col-md-9' placeholder="Here's a new thought..." value={thoughtText} onChange={handleChange}></textarea>
+                <textarea className='bg-secondary text-light form-input col-12 col-md-9' placeholder="Here's a new thought..." value={thoughtText} onChange={handleChange}></textarea>
                 <div>
                     <button className='btn col-12 col-md-3' type='submit'>
                         Submit

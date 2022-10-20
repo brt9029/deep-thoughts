@@ -30,7 +30,7 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ThoughtList thoughts={thoughts} title='Some Feed for Thoughts(s)...' />
+            <ThoughtList thoughts={thoughts} title='Some Feed for Thought(s)...' />
           )}
         </div>
         {loggedIn && userData ? (
