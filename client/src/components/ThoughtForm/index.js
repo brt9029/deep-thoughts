@@ -59,7 +59,7 @@ const ThoughtForm = () => {
 
     return (
         <div>
-            <p className={`m-0 ${characterCount === 280 ? 'text-error' : ''}`}>
+            <p className={`m-0 char-count ${characterCount === 280 ? 'text-error' : ''}`}>
                 Character Count: {characterCount}/280
                 {error && <span className='ml-2 text-error'>Something went wrong...</span>}
             </p>

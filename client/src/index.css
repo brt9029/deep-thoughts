@@ -40,6 +40,7 @@ body {
   font-size: 20px;
   color: var(--pale-silver);
   background-color: var(--pale-silver);
+  text-shadow: 1px 1px 1px var(--dark-background);
 }
 
 h1,
@@ -153,6 +154,7 @@ nav a:hover {
   border: 3px solid var(--dark-background);
   border-radius: var(--border-radius);
   background: var(--dark-background);
+  text-shadow: 1px 1px 1px black;
   color: var(--berry);
   opacity: 0.95;
 }
@@ -160,6 +162,7 @@ nav a:hover {
 .card-header {
   font-family: 'Kalam', cursive;
   color: var(--blue-green);
+  text-shadow: 1px 1px 1px black;
   margin: 0;
   background-color: var(--dark-background);
   padding: 0.625rem;
@@ -196,6 +199,7 @@ nav a:hover {
   font-size: 1.2rem;
   border: 2px solid var(--liberty);
   border-radius: var(--border-radius);
+  text-shadow: 1px 1px 1px black;
 }
 
 .form-input:focus {
@@ -205,6 +209,10 @@ nav a:hover {
 
 ::placeholder {
   color: rgb(255, 255, 255, .8);
+}
+
+.char-count {
+  color: var(--berry);
 }
 
 [type='radio']:checked,
@@ -798,6 +806,7 @@ nav a:hover {
 
 .text-light {
   color: var(--light);
+  text-shadow: 1px 1px 1px black;
 }
 
 .text-dark {

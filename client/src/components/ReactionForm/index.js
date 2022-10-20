@@ -31,7 +31,7 @@ const ReactionForm = ({ thoughtId }) => {
 
     return (
         <div>
-            <p className='m-0'>
+            <p className='char-count m-0'>
                 Character Count: {characterCount}/280
                 {error && <span className='ml-2 text-error'>Something went wrong...</span>}
             </p>
